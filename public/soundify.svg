@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155.505" height="36" viewBox="0 0 155.505 36">
+  <g id="Group_276" data-name="Group 276" transform="translate(-200.495 -73)">
+    <g id="Group_97" data-name="Group 97" transform="translate(0 -3.642)">
+      <g id="Group_79" data-name="Group 79" transform="translate(8375.495 1389)">
+        <circle id="Ellipse_24" data-name="Ellipse 24" cx="7.5" cy="7.5" r="7.5" transform="translate(-8167.5 -1301.5)" fill="#2c856c"/>
+        <rect id="Rectangle_57" data-name="Rectangle 57" width="3.75" height="13.125" rx="0.5" transform="translate(-8161.875 -1309)" fill="#2c856c"/>
+        <rect id="Rectangle_58" data-name="Rectangle 58" width="3.75" height="13.125" rx="0.5" transform="translate(-8145 -1295.875) rotate(90)" fill="#2c856c"/>
+        <rect id="Rectangle_59" data-name="Rectangle 59" width="3.75" height="13.125" rx="0.5" transform="translate(-8161.875 -1295.875) rotate(90)" fill="#2c856c"/>
+        <rect id="Rectangle_60" data-name="Rectangle 60" width="3.75" height="13.125" rx="0.5" transform="translate(-8161.875 -1292.125)" fill="#2c856c"/>
+        <rect id="Rectangle_61" data-name="Rectangle 61" width="3.75" height="13.125" rx="0.5" transform="translate(-8150.094 -1305.441) rotate(49)" fill="#2c856c"/>
+        <rect id="Rectangle_62" data-name="Rectangle 62" width="3.75" height="13.125" rx="0.5" transform="translate(-8162.46 -1294) rotate(49)" fill="#2c856c"/>
+        <rect id="Rectangle_63" data-name="Rectangle 63" width="3.75" height="13.125" rx="0.5" transform="translate(-8160 -1296.83) rotate(131)" fill="#2c856c"/>
+        <rect id="Rectangle_64" data-name="Rectangle 64" width="3.75" height="13.125" rx="0.5" transform="translate(-8147.634 -1285.389) rotate(131)" fill="#2c856c"/>
+      </g>
+    </g>
+    <text id="Soundify" transform="translate(238 101)" fill="#2c856c" font-size="28" font-family="Circular-Bold, Circular" font-weight="700"><tspan x="0" y="0">Soundify</tspan></text>
+  </g>
+</svg>
