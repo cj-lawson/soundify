@@ -6,23 +6,16 @@
 
 import { getSession, getProviders, useSession } from "next-auth/react";
 import Login from "~/components/Login";
+import Feed from "~/components/Feed";
 
 // import { api } from "~/utils/api";
 
 export default function Home() {
   const { data: session, status } = useSession();
 
-  return (
-    <>
-      {session ? (
-        <div>
-          <h1>you are logged in!</h1>
-        </div>
-      ) : (
-        <Login />
-      )}
-    </>
-  );
+  console.log(session);
+
+  return <>{session ? <Feed /> : <Login />}</>;
 }
 
 export async function getServerSideProps(context: any) {

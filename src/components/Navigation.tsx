@@ -1,8 +1,11 @@
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import soundify from "../../public/soundify.svg";
 import bmc from "../../public/bmc.svg";
 
 const Navigation = () => {
+  const { data: session, status } = useSession();
+
   return (
     <nav className="flex flex-row justify-between">
       <div>
@@ -22,6 +25,15 @@ const Navigation = () => {
           </div>
         </a>
       </div>
+      <>
+        {session ? (
+          <div>
+            <button onClick={() => signOut()}>Log out</button>
+          </div>
+        ) : (
+          <div></div>
+        )}
+      </>
     </nav>
   );
 };
