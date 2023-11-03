@@ -1,7 +1,26 @@
 import Navigation from "./Navigation";
 import ProfilePhoto from "./ProfilePhoto";
+import { signOut, useSession } from "next-auth/react";
+import { useState, useEffect } from "react";
+import useSpotify from "../hooks/useSpotify";
 
 const Feed = () => {
+  const spotifyApi = useSpotify();
+  const { data: session, status } = useSession();
+  const [playlists, setPlaylists] = useState();
+  const [currentTrack, setCurrentTrack] = useState();
+
+  useEffect(() => {
+    if (spotifyApi.getAccessToken()) {
+      spotifyApi.getUserPlaylists().then((data) => {
+        // @ts-ignore
+        setPlaylists(data.body.items);
+      });
+    }
+  }, [session, spotifyApi, currentTrack]);
+
+  //   console.log(playlists);
+
   return (
     <div className="flex h-full w-full flex-col items-center bg-[#F5F3EF]">
       <div className="mb-8 mt-4 w-full max-w-4xl px-12 pb-4 pt-4">

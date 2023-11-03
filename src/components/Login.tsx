@@ -1,6 +1,5 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
-import Link from "next/link";
 import Navigation from "~/components/Navigation";
 import { FaSpotify } from "react-icons/fa";
 
